@@ -3,4 +3,6 @@
 ### yandex
 В версии [lite](https://github.com/helgaborjomi/pay-gateways/blob/master/yandex/result_lite.php) показан наглядный пример получения и обработки http-уведомлений от платежной системы Yandex.
 Вам достаточно вписать свой секретный ключ платежной формы yandex и прописать необходимые действия в конце скрипта, которые нужно выполнить при успешной оплате.
-Подробная документация http-уведомлений yandex'a описана [здесь](https://tech.yandex.ru/money/doc/dg/reference/notification-p2p-incoming-docpage/).
+Подробная документация http-уведомлений yandex'a описана [здесь](https://tech.yandex.ru/money/doc/dg/reference/notification-p2p-incoming-docpage/).     
+   
+В [обычной](https://github.com/helgaborjomi/pay-gateways/blob/master/yandex/result.php) приведены примеры с получением суммы платежа из базы, проверкой оплаченной суммы и компенсацией комиссии платежной системы. Таким образом можно переложить оплату комиссии на плечи покупателя.
