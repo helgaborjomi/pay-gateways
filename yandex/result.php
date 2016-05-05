@@ -47,8 +47,7 @@ if($y_amount != $amount) {
 }
 
 // создаем sha1 хэш из пришедших нам параметров и нашего секретного ключа
-$str = "{$y_notification_type}&{$y_operation_id}&{$y_amount}&643&{$y_datetime}&{$y_sender}&{$y_codepro}&{$secret}&{$y_label}";
-$sha1_hash = sha1($str);
+$sha1_hash = sha1("{$y_notification_type}&{$y_operation_id}&{$y_amount}&643&{$y_datetime}&{$y_sender}&{$y_codepro}&{$secret}&{$y_label}");
 
 // если пришедший в переменной $_POST хэш не равен нашему, то отфутболиваем
 if ($sha1_hash != $y_sha1_hash) {
